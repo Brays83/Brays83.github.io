@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200&display=swap");
+
+:root {
+	font-size: 10px;
+	font-family: "Lato", sans-serif, "Source Code Pro", monospace;
+}
+
+header,
+nav,
+main,
+aside,
+form,
+footer,
+div,
+section,
+article,
+fieldset,
+summary,
+legend,
+menu,
+figure,
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+label,
+canvas,
+details,
+img {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+li {
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+/**Bootstrap **/
+.btn {
+	padding: 1em 2em;
+	background-color: #FFE66D;
+	border: none;
+	border-radius: 12px;
+	font-weight: 600;
+	transition-duration: 600ms;
+}
+.btn:hover {
+	border: #000000 2px solid;
+}
+
+.header {
+	background-color: #FF7F50;
+	height: 8vh;
+	width: 100%;
+}
+
+.header__nav {
+	margin: 0 4em;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__nav--logo {
+	height: 10em
+}
+
+.footer__top--logo{
+	height: 20em;
+}
+
+.header__nav--logo > img, .footer__top--logo > a >img {
+	height: 100%;
+}
+
+.header__nav--list {
+	display: flex;
+	gap: 2em;
+}
+
+.list__link {
+	color: #ffffff;
+	font-size: 1.4em;
+}
+
+.list__link:active, .list__link:hover {
+	color: #FFE66D;
+	font-weight: 600;
+}
+
+.footer {
+	background-color: #FF7F50;
+	padding: 0 5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-evenly;	
+	border-bottom: 2px solid #ffffff;
+}
+
+.footer__top--downloads > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__top--list > h2, .footer__top--downloads > h2 {
+	font-size: 2em;
+	margin: 1.5em 0;
+}
+
+.footer__top--list > ul > li a {
+	color: #ffffff;
+	font-size: 1.4em;
+}
+.footer__top--list > ul > li {
+	margin: 1em 0;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: space-around;
+	padding: 3em 0;
+}
+
+.footer__bottom--socialMedia {
+	display: flex;
+	gap: 2em;
+}
+
+/** Principal **/
+
+.main, .mainAboutMe {
+	height: 90vh;
+	width: 100%;
+}
+
+
+.main {
+	background-image: url("./assets/images/hero.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.main > h1 {
+	font-size: 5em;
+	color: #000000;
+	font-weight: 300;
+}
+
+.main__hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main__hero > span {
+	font-size: 2em;
+	color: #000000;
+	font-weight: 600;
+}
+
+.mainAboutMe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #5FBF62;
+}
+
+.mainAboutMe > h2 {
+	font-size: 3em;
+	padding: 3em 0;
+}
+
+.mainAboutMe__description {
+	display: flex;
+	width: 100%;
+}
+
+.mainAboutMe__description > p {
+	width: 50%;
+}
+
+.mainAboutMe__description > img {
+	width: 500px;
+}
+
+.mainRecommendations, .mainRestaurant {
+	background-color: #5FBF62;
+
+}
+.mainRecommendations > h2 {
+	font-size: 3em;
+	text-align: center;
+	padding: 2em 0;
+}
+.mainRecommendations__container {
+	padding-bottom: 8em;
+}
+
+.mainRecommendations__container--article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2em;
+}
+
+.article__restaurant {
+	background-color: #ffffff;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 12px;
+	padding: 2em 5em;
+}
+
+.article__restaurant--image > img, .article__image > img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.article__restaurant--description {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: center;
+	gap: 2em;
+	text-align: end;
+}
+
+.article__restaurant--description > h3 {
+	font-size: 2em;
+}
+
+.article__restaurant--description > p {
+	font-size: 1.4em;
+}
+
+.mainRestaurant > h2 {
+	font-size: 3em;
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 1.5em;
+} 
+
+.mainRestaurant__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3em;
+}
+
+.mainRestaurant__container--article {
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin: 5em;
+	padding: 5em;
+	border-radius: 12px;
+}
+.article__restaurant--description {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.article__restaurant--description > h3 {
+	font-size: 2em;
+}
+
+.article__restaurant--description > p {
+	font-size: 1.4em;
+}
