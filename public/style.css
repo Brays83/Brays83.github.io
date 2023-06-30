@@ -4,6 +4,7 @@
 	font-size: 10px;
 	font-family: "Lato", sans-serif, "Source Code Pro", monospace;
 }
+* {}
 
 header,
 nav,
@@ -85,7 +86,9 @@ a{
 }
 
 .header__nav--logo {
-	height: 10em
+	height: 14em;
+	
+	
 }
 
 .footer__top--logo{
@@ -116,27 +119,42 @@ a{
 	padding: 0 5em;
 	display: flex;
 	flex-direction: column;
+	font-size: Nunito;
+
+	
 }
 
 .footer__top {
 	display: flex;
 	justify-content: space-evenly;	
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+	float: right;
+	
 }
 
 .footer__top--downloads > div {
 	display: flex;
+	
 	flex-direction: column;
+	
+
 }
+.logo_donwloader{
+	height: 62.5px;
+	width: 161.5px;
+}
+
 
 .footer__top--list > h2, .footer__top--downloads > h2 {
 	font-size: 2em;
 	margin: 1.5em 0;
+	
 }
 
 .footer__top--list > ul > li a {
 	color: #ffffff;
 	font-size: 1.4em;
+	
 }
 .footer__top--list > ul > li {
 	margin: 1em 0;
@@ -162,10 +180,12 @@ a{
 
 
 .main {
-	background-image: url("./assets/images/hero.jpg");
+	background: url("assets/images/hero.jpeg");
+	background-blend-mode: saturation;
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 	display: flex;
     align-items: center;
 	flex-direction: column;
@@ -179,16 +199,35 @@ a{
 }
 
 .main__hero {
+	font-size: 2.6rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	font-family: Nunito;
+	
+	
 }
 
-.main__hero > span {
+.span1 {
 	font-size: 2em;
-	color: #000000;
+	color: #ffffff;
 	font-weight: 600;
+}
+.span2{
+	font-size: 1.3em;
+	color: #ffffff;
+	font-weight: 600;
+}
+.buscador > form > input {
+	width: 1000px;
+	height: 50px;
+	border: 0;
+	border-radius: 10px;
+    padding: 10px;
+	outline: none;
+	font-size: large;
+
 }
 
 .mainAboutMe {
